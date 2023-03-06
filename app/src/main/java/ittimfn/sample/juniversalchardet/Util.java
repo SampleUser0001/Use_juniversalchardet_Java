@@ -1,17 +1,3 @@
-# Use_juniversalchardet_Java
-juniversalchardetを使用して文字コードを判定する。
-
-## build.gradle
-
-``` groovy
-dependencies {
-    implementation 'com.googlecode.juniversalchardet:juniversalchardet:1.0.3'
-}
-```
-
-## ソース
-
-``` java
 package ittimfn.sample.juniversalchardet;
 
 import java.io.FileInputStream;
@@ -38,15 +24,3 @@ public class Util {
 
     private Util(){}
 }
-```
-
-## 文字コードパターン
-
-- SHIFT_JIS
-- UTF-8
-
-## 実行
-
-``` bash
-gradlew test
-```
