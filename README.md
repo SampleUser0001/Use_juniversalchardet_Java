@@ -1,0 +1,2 @@
+# Use_juniversalchardet_Java
+juniversalchardetを使用して文字コードを判定する。
