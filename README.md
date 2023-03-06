@@ -1,6 +1,13 @@
 # Use_juniversalchardet_Java
 juniversalchardetを使用して文字コードを判定する。
 
+- [Use\_juniversalchardet\_Java](#use_juniversalchardet_java)
+  - [build.gradle](#buildgradle)
+  - [ソース](#ソース)
+  - [文字コードパターン](#文字コードパターン)
+  - [実行](#実行)
+
+
 ## build.gradle
 
 ``` groovy
