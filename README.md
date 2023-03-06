@@ -51,6 +51,8 @@ public class Util {
 
 - SHIFT_JIS
 - UTF-8
+- null
+    - 判断できない場合
 
 ## 実行
 

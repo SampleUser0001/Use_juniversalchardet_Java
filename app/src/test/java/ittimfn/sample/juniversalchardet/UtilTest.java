@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.fail;
 
 import java.io.IOException;
@@ -33,4 +34,17 @@ public class UtilTest {
         }
 
     }
+
+    @Test
+    public void asciiFileTest() {
+        try {
+            Path path = Paths.get(System.getProperty("user.dir"), "src", "test", "resources", "ascii.txt");
+            System.out.println(path.toString());
+            // 判断できない場合はnullが返ってくる。
+            assertNull(Util.getCharset(path.toString()));
+        } catch (IOException e) {
+            fail(e);
+        }
+    }
+
 }
